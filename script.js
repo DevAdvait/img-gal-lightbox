@@ -3,7 +3,7 @@ $(function () {
   const lightbox = $("#lightbox");
   const lightboxImg = $("#lightbox img");
   let currentIndex = 0;
-  const totalImages = 1000;
+  const totalImages = 100;
 
   // Dynamically generate gallery images with animation delay
   for (let i = 0; i < totalImages; i++) {
@@ -11,7 +11,7 @@ $(function () {
     const delay = i * 50; // Staggered animation delay
     const image = $(`
     <div class="col-6 col-md-4 col-lg-3">
-      <img src="https://picsum.photos/id/${id}/400/300" alt="Image ${
+      <img src="https://picsum.photos/id/${id}/2160/1080" alt="Image ${
       i + 1
     }" class="img-fluid gallery-img" data-index="${i}" style="animation-delay:${delay}ms" />
     </div>
